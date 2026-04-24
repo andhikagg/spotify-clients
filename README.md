@@ -12,7 +12,7 @@ Place this module in your project. No `npm install` of third-party dependencies 
 
 ### CommonJS (CJS)
 ```javascript
-const sp = require('spotify-clients');
+const sp = require('./spotify-clients');
 
 async function test() {
     // Search 
@@ -25,14 +25,14 @@ test();
 
 ### ES Modules (ESM)
 ```javascript
-import sp, { search, download } from 'spotify-clients';
+import sp, { search, download } from './spotify-clients';
 
 // Using Default Export
 const res = await sp.search("blue");
 console.log(res);
 
 // Using Named Exports
-const trackData = await download('https://open.spotify.com/track/4PTG3Z6ehGkBFwjybzWkR8');
+const trackData = await download('https://open.spotify.com/track/23WxsmliKISYaCfam8iPPG');
 console.log(trackData);
 ```
 
