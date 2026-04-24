@@ -26,7 +26,7 @@ class Parser {
         return {
             uri,
             id: p[2] || null,
-            url: p[2] ? `https://open.spotify.com/$${p[1]}/${p[2]}` : null
+            url: p[2] ? `https://open.spotify.com/${p[1]}/${p[2]}` : null
         };
     }
 
